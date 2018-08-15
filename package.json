@@ -1,0 +1,29 @@
+{
+  "name": "cssthis-react",
+  "version": "0.0.0",
+  "description": "Cssthis-react is a simple way to control the CSS of its components",
+  "main": "dist/cssthis-react.js",
+  "umd:main": "dist/cssthis-react.umd.js",
+  "module": "dist/cssthis-react.m.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "microbundle"
+  },
+  "author": "Matias Trujillo Olivares",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UpperCod/cssthis-react.git"
+  },
+  "dependencies": {
+    "cssthis": "^0.1.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react-app": "^3.1.2",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
