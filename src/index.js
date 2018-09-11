@@ -37,7 +37,6 @@ class Theme extends Component {
     }
     render() {
         let { props } = this;
-        console.log(this);
         return props.children ? props.children : undefined;
     }
 }
@@ -59,6 +58,7 @@ function style(tag = "div", props = {}) {
                 this.state = {};
             }
             print(props, rewrite) {
+                props.id = "." + props.cn;
                 if (!exist(versions, props.cn) || rewrite) {
                     connect(
                         versions,
@@ -85,7 +85,6 @@ function style(tag = "div", props = {}) {
             }
             load(props) {
                 let provider = this.context[config.provider];
-                console.log(provider);
                 if (provider) {
                     if (!exist(versions, provider.cn)) {
                         connect(
